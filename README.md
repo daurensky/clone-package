@@ -1,6 +1,7 @@
 # Admin-kit package cloner
 
-## Easy clone package any admin-kit package!
+### About
+Clone the package repository to composer-packages/ibecsystems/:package-url. If you are too lazy to do everything manually.
 
 ## Requirements
 **Preinstalled node.js**
