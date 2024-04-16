@@ -46,12 +46,9 @@ const main = async () => {
   const vcsContent = fs.readFileSync(vcsPath, "utf-8");
 
   const vcsContentWithRepo = vcsContent.replace(
-    "</project>",
-    `  <component name="VcsDirectoryMappings">
-  <mapping directory="${repoPath}" vcs="Git" />
-</component>
-</project>
-    `
+    "</component>",
+    `  <mapping directory="$PROJECT_DIR$/${repoPath}" vcs="Git" />
+  </component>`
   );
 
   fs.writeFileSync(vcsPath, vcsContentWithRepo);
